@@ -1,16 +1,30 @@
-# React + Vite
+# Mesob House
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An Ethiopian restaurant application built with React and Vite.
 
-Currently, two official plugins are available:
+## What It Does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Mesob House is a fully routed single-page application that lets a guest:
 
-## React Compiler
+- Browse a menu of 20 traditional dishes
+- Filter by category and search by name
+- View a full detail page per dish with ingredients 
+- Add dishes to a cart that survives page refreshes
+- Register or sign in with a validated account
+- Place a delivery order with full form validation
+- Receive a receipt after checkout
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack
 
-## Expanding the Oxlint configuration
+- React 18
+- React Router v6
+- Zustand
+- React Hook Form + Zod
+- Vite
+- PropTypes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Run It
+
+```bash
+npm install
+npm run dev

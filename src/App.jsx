@@ -13,6 +13,7 @@ const OrderConfirmation = lazy(() => import("./pages/OrderConfirmation"));
 const Login = lazy(() => import("./pages/Login"));
 const Register = lazy(() => import("./pages/Register"));
 const Account = lazy(() => import("./pages/Account"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function Loader() {
   return <p className="spinner">Loading…</p>;
@@ -82,6 +83,14 @@ export default function App() {
                 <RequireAuth>
                   <Account />
                 </RequireAuth>
+              </Suspense>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <Suspense fallback={<Loader />}>
+                <NotFound />
               </Suspense>
             }
           />
