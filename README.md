@@ -28,3 +28,14 @@ Mesob House is a fully routed single-page application that lets a guest:
 ```bash
 npm install
 npm run dev
+
+
+Open http://localhost:5173
+
+## Documentation
+
+- BRIEF.md — the capstone brief
+- ROUTES.md — the route map
+- COMPONENT_TREE.md — component tree with ownership
+- STATE_TABLE.md — state placement table
+- FAILURE_CHECKS.md — failure and accessibility passes
